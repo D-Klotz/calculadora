@@ -21,19 +21,19 @@ describe('CalculadoraService', () => {
 
   it('deveria garantir 4 - 1 = 3',
   inject([CalculadoraService], (service: CalculadoraService) => {
-  let subtracao: number = service.calcular(4,1, CalculadoraService.SUBTRACAO);
+  let subtracao: number = service.calcular(4, 1, CalculadoraService.SUBTRACAO);
   expect(subtracao).toEqual(3);
   }));
 
   it('deveria garantir 4 / 2 = 2',
   inject([CalculadoraService], (service: CalculadoraService) => {
-  let divisão: number = service.calcular(4,2, CalculadoraService.DIVISAO);
+  let divisão: number = service.calcular(4, 2, CalculadoraService.DIVISAO);
   expect(divisão).toEqual(2);
   }));
 
   it('deveria garantir 4 * 2 = 8',
   inject([CalculadoraService], (service: CalculadoraService) => {
-  let multiplicacao: number = service.calcular(4,2, CalculadoraService.MULTIPLICACAO);
+  let multiplicacao: number = service.calcular(4, 2, CalculadoraService.MULTIPLICACAO);
   expect(multiplicacao).toEqual(8);
   }));
 
